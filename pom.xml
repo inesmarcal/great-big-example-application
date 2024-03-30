@@ -29,7 +29,7 @@
         <gatling-maven-plugin.version>2.2.4</gatling-maven-plugin.version>
         <hibernate.version>5.2.8.Final</hibernate.version>
         <hikaricp.version>2.6.0</hikaricp.version>
-        <jackson-datatype-hibernate5.version>2.8.8</jackson-datatype-hibernate5.version>
+        <jackson-datatype-hibernate5.version>2.16.1</jackson-datatype-hibernate5.version>
         <jackson-datatype-hppc.version>2.8.8</jackson-datatype-hppc.version>
         <jackson-datatype-json-org.version>2.8.8</jackson-datatype-json-org.version>
         <jackson-datatype-jsr310.version>2.8.8</jackson-datatype-jsr310.version>
@@ -57,8 +57,8 @@
         <node.version>v6.11.0</node.version>
         <postgresql.version>9.4.1212</postgresql.version>
         <!-- These remain empty unless the corresponding profile is active -->
-        <profile.no-liquibase />
-        <profile.swagger />
+        <profile.no-liquibase/>
+        <profile.swagger/>
         <prometheus-simpleclient.version>0.0.20</prometheus-simpleclient.version>
         <!-- Sonar properties -->
         <project.testresult.directory>${project.build.directory}/test-results</project.testresult.directory>
@@ -714,9 +714,9 @@
                 <configuration>
                     <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                     <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                    <driver></driver>
+                    <driver/>
                     <url>jdbc:postgresql://localhost:5432/GreatBigExampleApplication</url>
-                    <defaultSchemaName></defaultSchemaName>
+                    <defaultSchemaName/>
                     <username>GreatBigExampleUser</username>
                     <password>password</password>
                     <referenceUrl>hibernate:spring:org.exampleapps.greatbig.domain?dialect=&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
